@@ -21,4 +21,6 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           source: "./*"
           target: "/apps/swagger/mkdocs/docs"
+          timeout: 60s  # הגדל את הtimeout
+          debug: true   # הפעל מצב debug
 
